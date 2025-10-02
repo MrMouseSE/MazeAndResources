@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using Enemies;
 using GradableObjectReference;
+using IndependentsSkills;
 using LootableResources;
 using NotificationWindow;
 using Player;
 using Rooms;
 using UnityEngine;
+using WorkbenchesMechanics;
 
 public class DummyEntryPoint : MonoBehaviour
 {
@@ -25,7 +27,9 @@ public class DummyEntryPoint : MonoBehaviour
             new LootableObjectsController(),
             new NotificationWindowController(),
             new PlayerBehaviourController(),
-            new EnemiesController()
+            new EnemiesController(),
+            new IndependentSkillsController(),
+            new PlayerWorkbenchsController(),
         };
     }
 
